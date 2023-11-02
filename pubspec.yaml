@@ -38,7 +38,6 @@ dependencies:
   floor: ^1.4.2
   intl: ^0.18.1
   geolocator: ^10.1.0
-  geocoding: ^2.1.0
   flutter_polyline_points: ^1.0.0
   google_maps_flutter: ^2.1.7
   provider: ^6.0.5
@@ -70,6 +69,7 @@ dependencies:
   package_info_plus: any
 
   video_player: ^2.7.2
+  geocoding: ^2.1.1
 
   #flutter_facebook_login:
   #firebase_auth:

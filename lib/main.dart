@@ -1,6 +1,7 @@
 
 import 'package:demoapplication/EditProfileUi.dart';
 import 'package:demoapplication/LoginPage.dart';
+import 'package:demoapplication/QuerySerachOnGoogleMap.dart';
 import 'package:demoapplication/ShareTheVideoImage.dart';
 import 'package:demoapplication/UserNearbyLocation.dart';
 import 'package:demoapplication/facebooklogin/FacebookLogin.dart';
@@ -14,6 +15,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:provider/provider.dart';
 import 'ApiImplement/ApiImplmentInFlutter.dart';
+import 'ConvertLatLongToAddress.dart';
 import 'CurrentLocationFlutter.dart';
 import 'DirectionAndKmGoogleMap.dart';
 import 'DrawPolyLineFlutter.dart';
@@ -54,7 +56,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity),
-        home:SearchDataList(),
+        home:ConvertLatLongToAddress(),
     );
   }
 }

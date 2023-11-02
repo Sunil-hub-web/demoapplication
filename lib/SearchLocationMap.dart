@@ -105,8 +105,8 @@ class _SearchLocationMapState extends State<SearchLocationMap> {
         ?.showBottomSheet((context) => Text(response.errorMessage!));
   }
 
-  Future<void> displayPrediction(
-      Prediction p, ScaffoldState? currentState) async {
+  Future<void> displayPrediction(Prediction p, ScaffoldState? currentState) async {
+
     GoogleMapsPlaces places = GoogleMapsPlaces(
         apiKey: kGoogleApiKey,
         apiHeaders: await const GoogleApiHeaders().getHeaders());
@@ -121,8 +121,7 @@ class _SearchLocationMapState extends State<SearchLocationMap> {
     marker.add(Marker(
         markerId: const MarkerId("0"),
         position: LatLng(lat!, lng!),
-        infoWindow:
-            InfoWindow(title: placesDetailsResponse.result.formattedAddress)));
+        infoWindow: InfoWindow(title: placesDetailsResponse.result.formattedAddress)));
     setState(() {});
 
     controllerMap
