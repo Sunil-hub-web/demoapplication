@@ -18,6 +18,7 @@ class _ConvertLatLongToAddressState extends State<ConvertLatLongToAddress> {
   TextEditingController textEditingController = TextEditingController();
   var uuid = Uuid();
   String _sessionToken = "122344";
+
   List<dynamic> placelist = [];
 
   @override
