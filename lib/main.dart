@@ -6,6 +6,7 @@ import 'package:demoapplication/ShareTheVideoImage.dart';
 import 'package:demoapplication/UserNearbyLocation.dart';
 import 'package:demoapplication/facebooklogin/FacebookLogin.dart';
 import 'package:demoapplication/searchdata/SearchDataList.dart';
+import 'package:demoapplication/videolistview/ShowVideoList.dart';
 import 'package:demoapplication/videorecording/CameraPage.dart';
 import 'package:demoapplication/videorecording/VideoApp.dart';
 import 'package:demoapplication/videorecording/VideoPlayerExample.dart';
@@ -57,7 +58,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity),
-        home:CustomSearchResponse(),
+        home:ShowVideoList(),
     );
   }
 }
