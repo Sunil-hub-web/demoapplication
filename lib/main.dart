@@ -3,6 +3,7 @@ import 'package:demoapplication/EditProfileUi.dart';
 import 'package:demoapplication/LoginPage.dart';
 import 'package:demoapplication/QuerySerachOnGoogleMap.dart';
 import 'package:demoapplication/ShareTheVideoImage.dart';
+import 'package:demoapplication/ShowArrayInsideArray/ShowArrayListData.dart';
 import 'package:demoapplication/UserNearbyLocation.dart';
 import 'package:demoapplication/facebooklogin/FacebookLogin.dart';
 import 'package:demoapplication/searchdata/SearchDataList.dart';
@@ -58,7 +59,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity),
-        home:ShowVideoList(),
+        home:ShowArrayListData(),
     );
   }
 }
